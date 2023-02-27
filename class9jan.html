@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="" id="box">
+        <p>Full Name <input type="text" name="" value=""></p>
+        
+    </div>
+    <button type="button" id="btnAdd" name="button">Add New</button>
+    <script type="text/javascript">
+        let btn = document.getElementById("btnAdd");
+        btn.addEventListener("click",function(){
+            document.getElementById("box").innerHTML+=
+             '<p>Replaced Text Box <input type="text" name="" value=""></p>';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <h2>POpup Box</h2>
+    <button type="button" id="popup" onclick="popup()">Click Me</button><br>
+    <label for="" id="message"> </label>
+    <script type="text/javascript">
+        //window.addEventListener("load",popup());  //page open hune bitikai popup aaune 
+       /* let btn = document.getElementById('popup');
+        btn.addEventListener("click",function(){
+            alert(" Input Days ");                            //bahhira ko function call na gari direct alert message popup garne
+        });*/
+
+        function popup(){
+            let day =prompt("Input day","1");
+           switch(day){
+            case '1':
+                document.getElementById('message').innerHTML="Sunday";
+                break;
+            case '2':
+                document.getElementById('message').innerHTML="Monday";
+                break;
+            case '3':
+                document.getElementById('message').innerHTML="Tuesday";
+                break; 
+            case '4':
+                document.getElementById('message').innerHTML="Wednesday";
+                break;
+            case '5':
+                document.getElementById('message').innerHTML="Thursady";
+                break;
+            case '6':
+                document.getElementById('message').innerHTML="Friday";
+                break;
+            case '7':
+                document.getElementById('message').innerHTML="Saturday";
+                break;
+            default:
+                document.getElementById('message').innerHTML="Invalid Input";
+           }
+        }
+    </script> 
+</body>
+</html>

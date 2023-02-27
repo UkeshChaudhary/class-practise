@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            padding: 10px;
+        }
+        span{
+            color: red;
+        }
+        #lblname{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+        <fieldset>
+          <legend>Employee Details</legend>
+          <p></p>
+        <form method="post">
+            <label for="name">Name: <span>*</span></label><br>
+            <input type="text" name="name" id="name" ><br>
+            <label for="name" id="lblname"></label><br>
+            <label for="Email">Email: <span>*</span></label><br>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="mobiile">Mobile Number: </label><br>
+            <input type="text" name="mobile" id="mnum"><br><br>
+            <label for="address">Address: <span>*</span></label><br>
+            <input type="text" name="address" id="address"><br><br>
+            <label for="gender">Gender: </label><br>
+            <input type="radio" name="gen" id="gender><label for="male">Male</label>
+            <input type="radio" name="gen" id="gender"><label for="female">Female</label>
+            <input type="radio" name="gen" id="gender"><label for="other">Other</label><br><br>
+            <label for="age">Age: <span>*</span></label><br>
+            <input type="number" name="age" id="age" max="120" min="0"><br><br>
+            <input type="button" onclick="validate()" name="submit" id="submit" value="Submit">
+    </form>
+    <script type="text/javascript" src="validate.js">
+
+    </script>
+        </fieldset>
+        
+   
+</body>
+</html>

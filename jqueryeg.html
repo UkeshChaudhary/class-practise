@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="txt">&nbsp;<label for="">km</label>&nbsp;&nbsp;
+    <button type="button" name="button" id="btn">&nbsp; Convert</button>&nbsp;&nbsp;
+    <input type="text" name="" id="txt1"><label for="">&nbsp; m</label>&nbsp;&nbsp;
+    <p id="demo">
+        This is demo.
+    </p>
+    <script type="text/javascript" src="./jquery-3.6.3.min/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+        /*$(document).ready(function(){
+            alert("hello");
+        });*/
+        $('#btn').click(function(){
+            /*var a = $("#txt").val();
+
+            $("p").hide();
+            alert("a");*/
+
+            var meter = $("#txt").val();
+            var kilometer = meter * 1000;
+            $("#txt1").val(kilometer);
+            
+        });
+        /*$("p").click(function(){
+            $("p").text("akvhdfbnaoijfbc");
+        });*/
+    </script>
+        
+</body>
+</html>

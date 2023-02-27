@@ -1,0 +1,27 @@
+<!-- WAP in js to input name, address and age of student and check the student is over 18 or not.
+    - use load event to get input from the user.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Example</title>
+</head>
+<body>
+    <label for="" id="result"></label>
+    <script type="text/javascript">
+        window.addEventListener("load", function(){
+            let name = prompt("Input Name", "Ukesh");
+            let address = prompt("Input Address");
+            let age = prompt("Input Age");
+            if (age>="18"){
+                document.getElementById("result").innerHTML=name+" lives in " + address + " is over 18";
+            }else{
+                document.getElementById("result").innerHTML=name + " lives in " + address + " is under 18";
+            }
+        });
+            
+    </script>
+</body>
+</html>

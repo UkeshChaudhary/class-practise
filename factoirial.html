@@ -1,0 +1,30 @@
+<!-- WAP to create a form to get input a number and find the factorial of the given number using while loop.
+    - add click event for a calculation button.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial using js</title>
+</head>
+<body>
+    <input type="text" name="" id="number">
+    <button type="button" id="calc">Calculate</button><br><br>
+    <label for="" id="result"></label>
+    <script type="text/javascript">
+        /*alert("Hii")*/
+        
+        let btn = document.getElementById('calc');
+        btn.addEventListener("click", function(){
+            let fact = 1;
+            let n =parseInt(document.getElementById('number').value); 
+            while(n>0){
+                fact=n*fact;
+                n = n-1       
+            }
+            document.getElementById('result').innerHTML="The factorial is "+fact;
+        });
+    </script>
+</body>
+</html>
